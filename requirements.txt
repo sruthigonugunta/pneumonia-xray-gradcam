@@ -1,6 +1,0 @@
-streamlit
-tensorflow==2.13
-tf-explain
-opencv-python
-matplotlib
-pillow
