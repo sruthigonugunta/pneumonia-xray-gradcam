@@ -8,12 +8,10 @@ Built as part of my interest in combining biomedical engineering and machine lea
 - pneumonia_model.py – trains a binary classifier using transfer learning (ResNet50), saves the model in both .keras and .h5 formats, and includes Grad-CAM code for testing.
 
 - app.py – Streamlit web app that:
-
--- Loads a trained model (if available)
--- Accepts uploaded X-rays from users
--- Predicts class (PNEUMONIA or NORMAL)
--- Generates and overlays Grad-CAM heatmaps to show important regions
-
+    - Loads a trained model (if available)
+    - Accepts uploaded X-rays from users
+    - Predicts class (PNEUMONIA or NORMAL)
+    - Generates and overlays Grad-CAM heatmaps to show important regions
 
 **Dataset & Model Info:**
 
@@ -22,17 +20,15 @@ Built as part of my interest in combining biomedical engineering and machine lea
 - Training: 5 epochs using binary cross-entropy + Adam optimizer
 - Image size: 224 × 224, normalized to [0, 1]
 
-
 **How to Run the App:**
 
 - Install dependencies:
--- pip install -r requirements.txt
+    - pip install -r requirements.txt
 
 - Launch the web app:
--- streamlit run app.py
+    - streamlit run app.py
 
 - Upload any chest X-ray image (.jpg, .png) to get predictions and a heatmap.
-
 
 **Notes:**
 
